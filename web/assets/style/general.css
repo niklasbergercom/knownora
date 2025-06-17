@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-background-primary: #faf8f1;
+    --color-background-secondary: #f3ecd3;
+    --color-button: #f5cb8c;
+    --color-focused: #fdae42;
+    --color-primary: #0c0501;
+}
+
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-primary);
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.simple-button {
+    font-size: medium;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: var(--color-button);
+    transition: 0.3s ease background-color;
+}
+
+.simple-button:hover {
+    background-color: var(--color-focused);
+}
+
+.underlined-link {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+}
+
+.underlined-link > div {
+    height: 2px;
+    width: 0;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.underlined-link:hover > div {
+    width: 100%;
+}
