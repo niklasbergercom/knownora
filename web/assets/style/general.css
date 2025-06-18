@@ -12,6 +12,7 @@
     --color-button: #f5cb8c;
     --color-focused: #fdae42;
     --color-primary: #0c0501;
+    --transition-lenght: 0.3s
 }
 
 body {
@@ -42,6 +43,7 @@ body {
     text-decoration: none;
     color: var(--color-primary);
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 .underlined-link > div {

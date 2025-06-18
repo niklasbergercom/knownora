@@ -1,0 +1,50 @@
+header {
+    height: 75px;
+    background-color: var(--color-background-secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+}
+
+header > div:first-of-type > img {
+    height: 50px;
+    width: auto;
+}
+
+#header-menu-left {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#header-menu-left > li {
+    padding-left: 15px;
+    transform: translateY(4px);
+}
+
+#my-profile-button-wrapper {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition-lenght) ease background-color;
+}
+
+#my-profile-button-wrapper > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#my-profile-button-wrapper:has(img:hover) {
+    background-color: var(--color-focused);
+}
