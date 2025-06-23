@@ -23,6 +23,14 @@ body {
     margin: 0;
 }
 
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
 .simple-button {
     font-size: medium;
     padding: 15px;
@@ -55,4 +63,24 @@ body {
 
 .underlined-link:hover > div {
     width: 100%;
+}
+
+.underlined-link-focused > div {
+    width: 100%;
+}
+
+.class-nametag {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.class-nametag > div {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 3px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
 }
