@@ -75,7 +75,6 @@ main {
     width: calc(14% - 30px);
     margin-right: 10px;
     margin-bottom: 10px;
-    background-color: var(--color-background-secondary);
     height: calc(16% - 30px);
     border-radius: 15px;
     padding: 10px;
@@ -84,7 +83,7 @@ main {
 }
 
 #cal-view-days > div.cal-view-unfocused {
-    background-color: transparent;
+    color: darkgray;
 }
 
 #cal-view-days > div > div {

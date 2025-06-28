@@ -11,6 +11,46 @@
     <link rel="stylesheet" href="../assets/style/app-home.css">
 </head>
 <body>
+    <div id="profile-sidebar-wrapper">
+        <div id="profile-sidebar">
+            <div>
+                <div id="profile-sidebar-header">
+                    <div id="profile-sidebar-account">
+                        <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile">
+                        <div>
+                            <b>Your Name</b><br>
+                            <span>your.name@example.edu</span>
+                        </div>
+                    </div>
+                    <div id="profile-sidebar-close-button-wrapper">
+                        <button id="profile-sidebar-close-button" title="Close Sidebar" onclick="toggleProfileSidebar(false)">
+                            <img src="../assets/icons/xmark-solid-0c0501.svg" alt="Close Sidebar">
+                        </button>
+                    </div>
+                </div>
+                <a class="underlined-link profile-sidebar-link" href="profile">
+                    <img src="../assets/icons/user-solid-0c0501.svg" alt="My Profile">
+                    My Profile
+                    <div></div>
+                </a>
+                <a class="underlined-link profile-sidebar-link" href="settings">
+                    <img src="../assets/icons/gear-solid-0c0501.svg" alt="Settings">
+                    Settings
+                    <div></div>
+                </a>
+                <a class="underlined-link profile-sidebar-link" onclick="signOut()">
+                    <img src="../assets/icons/arrow-right-from-bracket-solid-0c0501.svg" alt="Settings">
+                    Sign Out
+                    <div></div>
+                </a>
+            </div>
+            <div>
+                <span>Knownora v1.0.0 BETA</span><br>
+                <span>Made with ❤️ by <a class="underlined-link" href="https://github.com/niklasbergercom/knownora" target="_blank" style="display: inline-block">Niklas Berger<div></div></a></span><br>
+                <span>Published under the <a class="underlined-link" href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank" style="display: inline-block">GNU GPLv3<div></div></a> license</span>
+            </div>
+        </div>
+    </div>
     <header>
         <div>
             <img src="../assets/images/knownora.svg" alt="Knownora Icon">
@@ -33,7 +73,7 @@
                 </div>
             </div>
             <div id="my-profile-button-wrapper">
-                <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile">
+                <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile" onclick="toggleProfileSidebar(true)">
             </div>
         </div>
     </header>
@@ -41,7 +81,6 @@
         <h1 class="no-padding no-margin">Good Morning, Name</h1>
         <div id="app-home-upcoming-assignments">
             <h2>Upcoming Assignments</h2>
-            <!-- TODO: Design checkboxes -->
             <div id="app-home-upcoming-assignments-grid">
                 <div class="app-home-upcoming-assignments-divider"><div><b>TODAY</b> &nbsp; Jun 20</div><div></div></div>
                 <div class="app-home-upcoming-assignments-entry">
@@ -81,5 +120,6 @@
             </div>
         </div>
     </main>
+    <script src="../assets/scripts/app.js"></script>
 </body>
 </html>
