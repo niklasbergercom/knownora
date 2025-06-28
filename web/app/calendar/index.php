@@ -97,6 +97,25 @@
                     <span>Mathematik (10A)</span>
                 </li>
             </ul>
+            <h2>My Calendars</h2>
+            <ul id="cal-class-list">
+                <li>
+                    <input type="checkbox" class="simple-checkbox">
+                    <span>Personal</span>
+                </li>
+                <li>
+                    <input type="checkbox" class="simple-checkbox">
+                    <span>A Linked iCal</span>
+                </li>
+            </ul>
+            <div id="cal-create-wrapper">
+                <button class="simple-button" id="event-create-button" title="Create Event" onclick="createCalEvent()">
+                    <img src="../../assets/icons/plus-solid-0c0501.svg" alt="Create Event">Create Event
+                </button>
+                <button class="simple-button" id="cal-create-button" title="Create Calendar" onclick="createCal()">
+                    <img src="../../assets/icons/plus-solid-0c0501.svg" alt="Create Calendar">Create Calendar
+                </button>
+            </div>
         </div>
         <div id="cal-main">
             <div id="cal-navbar">

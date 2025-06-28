@@ -7,7 +7,7 @@ main {
 }
 
 #cal-sidebar {
-    width: 30%;
+    width: calc(30% - 25px);
     height: 100%;
     border-right: var(--color-primary) 1px solid;
     padding-left: 25px;
@@ -38,6 +38,37 @@ main {
 
 #cal-navbar > span {
     font-size: larger;
+}
+
+#cal-create-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: calc(30vw - 50px);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+#cal-create-wrapper > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(50% - 5px);
+}
+
+#cal-create-wrapper > button > img {
+    height: 25px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+#event-create-button {
+    border-radius: 25px 10px 10px 25px;
+}
+
+#cal-create-button {
+    border-radius: 10px 25px 25px 10px;
 }
 
 #cal-view-weekdays, #cal-view-days {

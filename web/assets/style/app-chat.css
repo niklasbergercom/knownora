@@ -10,13 +10,11 @@ main {
     width: 30%;
     height: 100%;
     border-right: var(--color-primary) 1px solid;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-#chat-sidebar > h2 {
-    padding-left: 25px;
-}
-
-#chat-sidebar > div {
+#chat-sidebar > div:not(#chat-create-wrapper) {
     padding: 15px 25px;
     cursor: pointer;
     transition: 0.2s ease background-color;
@@ -24,11 +22,15 @@ main {
     align-items: center;
 }
 
-#chat-sidebar > div:hover {
+#chat-sidebar > div:not(#chat-create-wrapper):hover {
     background-color: var(--color-focused);
 }
 
-#chat-sidebar > div > div:first-of-type > img {
+#chat-sidebar > div:nth-last-of-type(2) {
+    margin-bottom: 100px;
+}
+
+#chat-sidebar > div:not(#chat-create-wrapper) > div:first-of-type > img {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -36,7 +38,7 @@ main {
     margin-right: 15px;
 }
 
-#chat-sidebar > div > div:last-of-type > * {
+#chat-sidebar > div:not(#chat-create-wrapper) > div:last-of-type > * {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -47,6 +49,27 @@ main {
 
 #chat-focused {
     background-color: var(--color-background-secondary);
+}
+
+#chat-create-wrapper {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: calc(30vw - 50px);
+}
+
+#chat-create-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#chat-create-button > img {
+    height: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-right: 10px;
 }
 
 #chat-main {
