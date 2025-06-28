@@ -88,7 +88,6 @@ main {
 }
 
 #cal-view-days > div > div {
-/*    Make it at max 1 line*/
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
