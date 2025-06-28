@@ -15,14 +15,23 @@
         <div>
             <img src="../assets/images/knownora.svg" alt="Knownora Icon">
             <ul id="header-menu-left">
-                <li><a class="underlined-link underlined-link-focused">Home<div></div></a></li>
-                <li><a class="underlined-link">Chat<div></div></a></li>
-                <li><a class="underlined-link">Calendar<div></div></a></li>
-                <li><a class="underlined-link">Classes<div></div></a></li>
-                <li><a class="underlined-link">School<div></div></a></li>
+                <li><a class="underlined-link underlined-link-focused" href="#">Home<div></div></a></li>
+                <li><a class="underlined-link" href="chat">Chat<div></div></a></li>
+                <li><a class="underlined-link" href="calendar">Calendar<div></div></a></li>
+                <li><a class="underlined-link" href="classes">Classes<div></div></a></li>
+                <li><a class="underlined-link" href="school">School<div></div></a></li>
             </ul>
         </div>
         <div>
+            <div id="header-search-wrapper">
+                <label for="header-search-input">
+                    <img src="../assets/icons/magnifying-glass-solid-0c0501.svg" alt="Search">
+                </label>
+                <div>
+                    <input type="text" placeholder="Search..." id="header-search-input">
+                    <div></div>
+                </div>
+            </div>
             <div id="my-profile-button-wrapper">
                 <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile">
             </div>
@@ -71,31 +80,6 @@
                 </div>
             </div>
         </div>
-<!--        <script>-->
-<!--            const assignmentsElement = document.getElementById("app-home-upcoming-assignments-grid")-->
-<!--            assignmentsElement.innerHTML = "";-->
-<!--            // Make a for loop for the numbers -15 to 15-->
-<!--            for (let x = -15; x <= 15; x++) {-->
-<!--                for (let y = -15; y <= 15; y++) {-->
-<!--                    let element = document.createElement("div");-->
-<!--                    element.className = "app-home-upcoming-assignments-entry";-->
-<!--                    element.innerHTML = `-->
-<!--                        <input type="checkbox" class="app-home-checkbox app-home-checkbox-${x}-${y}" checked=true>-->
-<!--                        <div class="class-nametag class-nametag-ch"><div>CH</div></div>-->
-<!--                        <span>X = ${x} AND Y = ${y}</span>-->
-<!--                    `;-->
-<!--                    assignmentsElement.appendChild(element);-->
-<!--                    // Add this CSS rule: .app-home-checkbox-${x}-${y}::after { transform: rotate(45deg) translateY(${y}px) translateX(${x}px); }-->
-<!--                    const style = document.createElement("style");-->
-<!--                    style.innerHTML = `-->
-<!--                        .app-home-checkbox-${x}-${y}::after {-->
-<!--                            transform: rotate(45deg) translateY(${y}px) translateX(${x}px);-->
-<!--                        }-->
-<!--                    `;-->
-<!--                    document.head.appendChild(style);-->
-<!--                }-->
-<!--            }-->
-<!--        </script>-->
     </main>
 </body>
 </html>
