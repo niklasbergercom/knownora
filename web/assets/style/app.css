@@ -100,7 +100,3 @@ header > div:first-of-type > img {
 #header-search-input:focus {
     outline: none;
 }
-
-main {
-    padding: 25px;
-}

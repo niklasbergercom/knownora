@@ -26,38 +26,6 @@
     background-color: var(--color-primary);
 }
 
-.app-home-checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    width: 22px;
-    height: 22px;
-    border: 2px solid var(--color-primary);
-    border-radius: 7px;
-    background: var(--color-background-secondary);
-    cursor: pointer;
-    position: relative;
-    vertical-align: middle;
-    transition: border-color 0.2s, background 0.2s;
-    margin-right: 12px;
-}
-
-.app-home-checkbox:hover, .app-home-recent-docs-entry:hover{
-    background-color: var(--color-focused);
-}
-
-.app-home-checkbox:checked::after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 4px;
-    top: 0;
-    width: 4px;
-    height: 12px;
-    border: solid var(--color-primary);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg) translateY(-1px) translateX(1px);
-}
-
 .app-home-recent-docs-entry {
     display: flex;
     align-items: center;
@@ -69,23 +37,12 @@
     transition: background-color 0.2s ease;
 }
 
+.app-home-recent-docs-entry:hover{
+    background-color: var(--color-focused);
+}
+
 .app-home-recent-docs-entry > img {
     height: 100%;
     aspect-ratio: 1 / 1;
     margin-right: 15px;
-}
-
-/* TODO: Remove, just for testing the design */
-
-.class-nametag-ch > div {
-    background-color: rgba(255, 211, 0, 0.25);
-    border-color: rgb(255, 211, 0);
-}
-.class-nametag-d > div {
-    background-color: rgba(255, 0, 0, 0.25);
-    border-color: rgb(255, 0, 0);
-}
-.class-nametag-m > div {
-    background-color: rgba(255, 110, 241, 0.25);
-    border-color: rgb(255, 110, 241);
 }

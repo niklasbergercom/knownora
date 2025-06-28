@@ -9,7 +9,7 @@
 :root {
     --color-background-primary: #faf8f1;
     --color-background-secondary: #f3ecd3;
-    --color-button: #f5cb8c;
+    --color-button: #ffd9a7;
     --color-focused: #ffcf90;
     --color-primary: #0c0501;
     --transition-lenght: 0.3s
@@ -21,6 +21,10 @@ body {
     font-family: Poppins, sans-serif;
     padding: 0;
     margin: 0;
+}
+
+#simple-main {
+    padding: 25px;
 }
 
 .no-padding {
@@ -43,6 +47,38 @@ body {
 
 .simple-button:hover {
     background-color: var(--color-focused);
+}
+
+.simple-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: border-color 0.2s, background 0.2s;
+    margin-right: 12px;
+}
+
+.simple-checkbox:hover {
+    background-color: var(--color-focused);
+}
+
+.simple-checkbox:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    width: 4px;
+    height: 12px;
+    border: solid var(--color-primary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateY(-1px) translateX(1px);
 }
 
 .underlined-link {
@@ -83,4 +119,23 @@ body {
     width: 25px;
     display: flex;
     justify-content: center;
+}
+
+
+
+
+
+/* TODO: Remove, just for testing the design */
+
+.class-nametag-ch > div {
+    background-color: rgba(255, 211, 0, 0.25);
+    border-color: rgb(255, 211, 0);
+}
+.class-nametag-d > div {
+    background-color: rgba(255, 0, 0, 0.25);
+    border-color: rgb(255, 0, 0);
+}
+.class-nametag-m > div {
+    background-color: rgba(255, 110, 241, 0.25);
+    border-color: rgb(255, 110, 241);
 }

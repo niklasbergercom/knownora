@@ -37,7 +37,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main id="simple-main">
         <h1 class="no-padding no-margin">Good Morning, Name</h1>
         <div id="app-home-upcoming-assignments">
             <h2>Upcoming Assignments</h2>
@@ -45,24 +45,24 @@
             <div id="app-home-upcoming-assignments-grid">
                 <div class="app-home-upcoming-assignments-divider"><div><b>TODAY</b> &nbsp; Jun 20</div><div></div></div>
                 <div class="app-home-upcoming-assignments-entry">
-                    <input type="checkbox" class="app-home-checkbox">
+                    <input type="checkbox" class="simple-checkbox">
                     <div class="class-nametag class-nametag-ch"><div>CH</div></div>
                     <span>Example Assignment 1</span>
                 </div>
                 <div class="app-home-upcoming-assignments-divider"><div><b>TOMORROW</b> &nbsp; Jun 21</div><div></div></div>
                 <div class="app-home-upcoming-assignments-entry">
-                    <input type="checkbox" class="app-home-checkbox">
+                    <input type="checkbox" class="simple-checkbox">
                     <div class="class-nametag class-nametag-d"><div>D</div></div>
                     <span>Example Assignment 2</span>
                 </div>
                 <div class="app-home-upcoming-assignments-entry">
-                    <input type="checkbox" class="app-home-checkbox">
+                    <input type="checkbox" class="simple-checkbox">
                     <div class="class-nametag class-nametag-m"><div>M</div></div>
                     <span>Example Assignment 3</span>
                 </div>
                 <div class="app-home-upcoming-assignments-divider"><div><b>MONDAY</b> &nbsp; Jun 23</div><div></div></div>
                 <div class="app-home-upcoming-assignments-entry">
-                    <input type="checkbox" class="app-home-checkbox">
+                    <input type="checkbox" class="simple-checkbox">
                     <div class="class-nametag class-nametag-d"><div>D</div></div>
                     <span>Example Assignment 4</span>
                 </div>
