@@ -1,0 +1,48 @@
+.app-home-upcoming-assignments-entry {
+    background-color: var(--color-background-secondary);
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.app-home-upcoming-assignments-entry:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+.app-home-upcoming-assignments-divider {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.app-home-upcoming-assignments-divider > div:first-of-type {
+    white-space: nowrap;
+}
+
+.app-home-upcoming-assignments-divider > div:last-of-type {
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-primary);
+}
+
+.app-home-recent-docs-entry {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-background-secondary);
+    border-radius: 25px;
+    height: 40px;
+    padding: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.app-home-recent-docs-entry:hover{
+    background-color: var(--color-focused);
+}
+
+.app-home-recent-docs-entry > img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    margin-right: 15px;
+}

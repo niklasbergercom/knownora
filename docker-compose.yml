@@ -1,0 +1,33 @@
+version: "3.8"
+services:
+  db:
+    image: mariadb:11
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: example-root-pw
+      MARIADB_DATABASE: exampledb
+      MARIADB_USER: exampleuser
+      MARIADB_PASSWORD: examplepw
+    volumes:
+      - db_data:/var/lib/mysql
+
+  backend:
+    build: ./backend
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/exampledb
+      SPRING_DATASOURCE_USERNAME: exampleuser
+      SPRING_DATASOURCE_PASSWORD: examplepw
+    ports:
+      - "8080"
+
+  frontend:
+    build: ./web
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  db_data:

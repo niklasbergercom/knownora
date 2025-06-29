@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/poppins/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-background-primary: #faf8f1;
+    --color-background-secondary: #f3ecd3;
+    --color-button: #ffd9a7;
+    --color-focused: #ffcf90;
+    --color-primary: #0c0501;
+    --transition-lenght: 0.3s
+}
+
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-primary);
+    font-family: Poppins, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#simple-main {
+    padding: 25px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.simple-button {
+    font-size: medium;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: var(--color-button);
+    transition: 0.3s ease background-color;
+}
+
+.simple-button:hover {
+    background-color: var(--color-focused);
+}
+
+.simple-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid var(--color-primary);
+    border-radius: 7px;
+    background: transparent;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    transition: border-color 0.2s, background 0.2s;
+    margin-right: 12px;
+}
+
+.simple-checkbox:hover {
+    background-color: var(--color-focused);
+}
+
+.simple-checkbox:checked::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    width: 4px;
+    height: 12px;
+    border: solid var(--color-primary);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) translateY(-1px) translateX(1px);
+}
+
+.underlined-link {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.underlined-link > div {
+    height: 2px;
+    width: 0;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+}
+
+.underlined-link:hover > div {
+    width: 100%;
+}
+
+.underlined-link-focused > div {
+    width: 100%;
+}
+
+.class-nametag {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.class-nametag > div {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 3px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* TODO: Remove, just for testing the design */
+
+.class-nametag-ch > div {
+    background-color: rgba(255, 211, 0, 0.25);
+    border-color: rgb(255, 211, 0);
+}
+.class-nametag-d > div {
+    background-color: rgba(255, 0, 0, 0.25);
+    border-color: rgb(255, 0, 0);
+}
+.class-nametag-m > div {
+    background-color: rgba(255, 110, 241, 0.25);
+    border-color: rgb(255, 110, 241);
+}
