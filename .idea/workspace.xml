@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Added create buttons in chat and calendar">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash für Passwort generieren/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hash für Passwort generieren/sha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/KnownoraBackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/SessionData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/repo/SessionRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/repo/UserRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/setup/backup/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/setup/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/setup/template/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/apache-vhost.conf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/apache-vhost.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/calendar/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/calendar/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/classes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/classes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/login/create-account/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/login/forgot-password/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/forgot-password/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/login/forgot-password/sent-link/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/forgot-password/sent-link/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/profile/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/school/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/school/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app/settings/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/settings/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-BlackItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-BlackItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-BoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-BoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-ExtraBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-ExtraBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-ExtraLight.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-ExtraLight.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Italic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Italic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-LightItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-LightItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-MediumItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-MediumItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-SemiBold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-Thin.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-Thin.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/fonts/poppins/Poppins-ThinItalic.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/fonts/poppins/Poppins-ThinItalic.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/arrow-left-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/arrow-left-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/arrow-right-from-bracket-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/arrow-right-from-bracket-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/arrow-right-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/arrow-right-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/file-pdf-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/file-pdf-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/gear-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/gear-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/magnifying-glass-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/magnifying-glass-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/plus-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/plus-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/user-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/user-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/icons/xmark-solid-0c0501.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/icons/xmark-solid-0c0501.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/images/knownora.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/images/knownora.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/app-cal.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app-cal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/app-chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app-chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/app-home.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app-home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;niklasbergercom&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:niklasbergercom/knownora.git&quot;,
+    &quot;accountId&quot;: &quot;53812fa2-3ee1-4f13-b345-7808791819a0&quot;
+  }
+}</component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2ybGp9PQ33CUsE8qz7FYZFRLC8q" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "v1.0.0",
+    "last_opened_file_path": "/home/niklasberger/Documents/Source/Clone/knownora/backend/target",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PHP"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/target" />
+      <recent name="$PROJECT_DIR$/Hash für Passwort generieren" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.26927.60" />
+        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.26927.60" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="" />
+      <created>1750096039478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1750096039478</updated>
+      <workItem from="1750096040642" duration="67000" />
+      <workItem from="1750096114123" duration="785000" />
+      <workItem from="1750097110118" duration="84000" />
+      <workItem from="1750097212258" duration="12000" />
+      <workItem from="1750097233647" duration="581000" />
+      <workItem from="1750098149093" duration="628000" />
+      <workItem from="1750187424733" duration="5332000" />
+      <workItem from="1750264934963" duration="3832000" />
+      <workItem from="1750326684292" duration="10000" />
+      <workItem from="1750335063986" duration="2310000" />
+      <workItem from="1750419271867" duration="5498000" />
+      <workItem from="1750707326852" duration="436000" />
+      <workItem from="1750707774025" duration="2270000" />
+      <workItem from="1751118712894" duration="12191000" />
+      <workItem from="1751132785368" duration="3432000" />
+      <workItem from="1751140879695" duration="5976000" />
+      <workItem from="1751198817489" duration="1613000" />
+      <workItem from="1751201844909" duration="753000" />
+      <workItem from="1751400008242" duration="42000" />
+      <workItem from="1751913463321" duration="5003000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Docker config">
+      <option name="closed" value="true" />
+      <created>1750268508356</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1750268508356</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Design for forgot-password and header on main app">
+      <option name="closed" value="true" />
+      <created>1750268845038</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1750268845038</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Worked on home view">
+      <option name="closed" value="true" />
+      <created>1750710036469</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1750710036469</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Home view looks presentable">
+      <option name="closed" value="true" />
+      <created>1751121086661</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1751121086661</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Home view looks presentable">
+      <option name="closed" value="true" />
+      <created>1751121231388</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1751121231388</updated>
+    </task>
+    <task id="LOCAL-00006" summary="First calendar design finished">
+      <option name="closed" value="true" />
+      <created>1751127507677</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1751127507677</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Started on chat design: just chat list yet, no messages">
+      <option name="closed" value="true" />
+      <created>1751130959777</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1751130959777</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Profile menu sidebar and placeholders for subpages that aren't designed yet">
+      <option name="closed" value="true" />
+      <created>1751143398692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1751143398692</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added create buttons in chat and calendar">
+      <option name="closed" value="true" />
+      <created>1751144490900</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1751144490900</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Docker config" />
+    <MESSAGE value="Design for forgot-password and header on main app" />
+    <MESSAGE value="Worked on home view" />
+    <MESSAGE value="Home view looks presentable" />
+    <MESSAGE value="First calendar design finished" />
+    <MESSAGE value="Started on chat design: just chat list yet, no messages" />
+    <MESSAGE value="Profile menu sidebar and placeholders for subpages that aren't designed yet" />
+    <MESSAGE value="Added create buttons in chat and calendar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added create buttons in chat and calendar" />
+  </component>
+</project>

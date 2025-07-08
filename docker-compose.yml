@@ -1,33 +1,43 @@
-version: "3.8"
-services:
-  db:
-    image: mariadb:11
-    restart: always
-    environment:
-      MARIADB_ROOT_PASSWORD: example-root-pw
-      MARIADB_DATABASE: exampledb
-      MARIADB_USER: exampleuser
-      MARIADB_PASSWORD: examplepw
-    volumes:
-      - db_data:/var/lib/mysql
+#version: '3.8'
 
+services:
   backend:
-    build: ./backend
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: knownora-backend
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:mariadb://db:3306/mydatabase
+      - SPRING_DATASOURCE_USERNAME=root
+      - SPRING_DATASOURCE_PASSWORD=example
+    ports:
+      - "8080:8080"
     depends_on:
       - db
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:mariadb://db:3306/exampledb
-      SPRING_DATASOURCE_USERNAME: exampleuser
-      SPRING_DATASOURCE_PASSWORD: examplepw
-    ports:
-      - "8080"
+    restart: unless-stopped
 
   frontend:
-    build: ./web
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: knownora-frontend
+    ports:
+      - "80:80"
     depends_on:
       - backend
+    restart: unless-stopped
+
+  db:
+    image: mariadb:11
+    container_name: knownora-db
+    environment:
+      - MARIADB_ROOT_PASSWORD=example
+      - MARIADB_DATABASE=mydatabase
     ports:
-      - "8080:80"
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
 
 volumes:
   db_data:
