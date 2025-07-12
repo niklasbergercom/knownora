@@ -18,11 +18,12 @@
         <div id="login-main">
             <h1>Sign in to Example School</h1>
             <form>
-                <label for="login-email">Email</label><br>
-                <input type="email" id="login-email" placeholder="your.name@example.edu"><br>
-                <label for="login-password">Password</label><br>
-                <input type="password" id="login-password" placeholder="••••••••••">
-                <button type="submit" class="simple-button" id="login-button">Continue</button>
+                <label for="login-email">Email * <span id="login-email-message" class="form-error"></span></label><br>
+                <input type="email" id="login-email" placeholder="your.name@example.edu" required><br>
+                <label for="login-password">Password * <span id="login-password-message" class="form-error"></span></label><br>
+                <input type="password" id="login-password" placeholder="••••••••••" required>
+                <button type="submit" class="simple-button" id="login-button" onclick="signIn()">Continue</button>
+                <div class="form-error" id="login-general-message"></div>
             </form>
             <div>
                 <a href="./forgot-password" class="underlined-link">I forgot my password<div></div></a>
@@ -32,5 +33,7 @@
             </div>
         </div>
     </main>
+    <script src="../../assets/scripts/general.js"></script>
+    <script src="../../assets/scripts/login.js"></script>
 </body>
 </html>

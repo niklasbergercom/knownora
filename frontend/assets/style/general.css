@@ -35,6 +35,10 @@ body {
     margin: 0;
 }
 
+.form-error {
+    color: red;
+}
+
 .simple-button {
     font-size: medium;
     padding: 15px;
@@ -47,6 +51,12 @@ body {
 
 .simple-button:hover {
     background-color: var(--color-focused);
+}
+
+.simple-button:disabled, .simple-button:not(:enabled) {
+    background-color: var(--color-focused);
+    cursor: not-allowed;
+
 }
 
 .simple-checkbox {

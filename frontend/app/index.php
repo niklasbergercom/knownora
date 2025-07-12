@@ -120,6 +120,20 @@
             </div>
         </div>
     </main>
+    <script src="../assets/scripts/general.js"></script>
     <script src="../assets/scripts/app.js"></script>
+    <script>
+        const knownoraUserId = getCookie("knownoraUserId");
+        const knownoraSessionId = getCookie("knownoraSessionId");
+        if (knownoraUserId !== null) {
+            document.querySelector("main").innerHTML += `
+                    <div>KnownoraUserId found: ${knownoraUserId}</div>
+                `
+        } if (knownoraSessionId !== null) {
+            document.querySelector("main").innerHTML += `
+                    <div>KnownoraSessionId found: ${knownoraSessionId}</div>
+                `
+        }
+    </script>
 </body>
 </html>
