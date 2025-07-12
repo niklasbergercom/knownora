@@ -16,10 +16,10 @@
             <div>
                 <div id="profile-sidebar-header">
                     <div id="profile-sidebar-account">
-                        <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile">
+                        <img src="../assets/images/account-default.svg" alt="Your Profile" title="Your Profile" id="sidebar-picture">
                         <div>
-                            <b>Your Name</b><br>
-                            <span>your.name@example.edu</span>
+                            <b id="sidebar-name"></b><br>
+                            <span id="sidebar-email"></span>
                         </div>
                     </div>
                     <div id="profile-sidebar-close-button-wrapper">
@@ -73,12 +73,12 @@
                 </div>
             </div>
             <div id="my-profile-button-wrapper">
-                <img src="https://cdn.niklasberger.com/knownora/example-pictures/male01.jpg" alt="Your Profile" title="Your Profile" onclick="toggleProfileSidebar(true)">
+                <img src="../assets/images/account-default.svg" alt="Your Profile" title="Your Profile" onclick="toggleProfileSidebar(true)" id="sidebar-open-image">
             </div>
         </div>
     </header>
     <main id="simple-main">
-        <h1 class="no-padding no-margin">Good Morning, Name</h1>
+        <h1 class="no-padding no-margin">Welcome<span id="greeting-name"></span></h1>
         <div id="app-home-upcoming-assignments">
             <h2>Upcoming Assignments</h2>
             <div id="app-home-upcoming-assignments-grid">
@@ -122,6 +122,7 @@
     </main>
     <script src="../assets/scripts/general.js"></script>
     <script src="../assets/scripts/app.js"></script>
+    <script src="../assets/scripts/app-home.js"></script>
     <script>
         const knownoraUserId = getCookie("knownoraUserId");
         const knownoraSessionId = getCookie("knownoraSessionId");

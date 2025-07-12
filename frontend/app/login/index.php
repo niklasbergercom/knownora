@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="../../assets/style/login.css">
 </head>
 <body>
+    <div id="login-popup">
+        <div id="login-popup-inner">
+            Lorem Ipsum Dolor Sit Amet
+        </div>
+        <div id="login-popup-progress">
+            <div></div>
+        </div>
+    </div>
     <main>
         <div id="login-logo">
             <img src="../../assets/images/knownora.svg" alt="Knownora Icon">

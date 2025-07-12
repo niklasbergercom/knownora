@@ -1,5 +1,6 @@
 package com.niklasberger.knownorabackend.controller;
 
+import com.niklasberger.knownorabackend.CommonsService;
 import com.niklasberger.knownorabackend.data.PrivateUserData;
 import com.niklasberger.knownorabackend.data.SessionData;
 import com.niklasberger.knownorabackend.data.UserData;
@@ -16,14 +17,19 @@ import ua_parser.Client;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @RestController
 public class AuthController {
 
     @Autowired
     private UserRepo userRepo;
+
     @Autowired
     private SessionRepo sessionRepo;
+
+    @Autowired
+    private CommonsService commonsService;
 
     @PostMapping("/public/auth/signup")
     public ResponseEntity signup(
@@ -142,6 +148,52 @@ public class AuthController {
 
         return new ResponseEntity<>(sessionData, HttpStatus.OK);
 
+    }
+
+    @PostMapping("/public/auth/logout")
+    public ResponseEntity logout(
+            @RequestBody Map<String, String> requestInput
+    ){
+
+        String userId = requestInput.getOrDefault("userId", "").trim().replace("'", "");
+        String sessionId = requestInput.getOrDefault("sessionId", "").trim().replace("'", "");
+        String sessionToken = requestInput.getOrDefault("sessionToken", "").trim().replace("'", "");
+
+        Optional<SessionData> requestSession = commonsService.validateSession(sessionId, sessionToken, userId);
+
+        if (requestSession.isEmpty()) {
+            return new ResponseEntity(
+                    "[\"Invalid sessionId, sessionToken or userId\"]",
+                    HttpStatus.UNAUTHORIZED
+            );
+        }
+
+        // Delete the session
+        sessionRepo.delete(requestSession.get());
+
+        return new ResponseEntity<>(
+                "[\"Logged out successfully\"]",
+                HttpStatus.OK
+        );
+
+    }
+
+    public Boolean checkSession(
+            String userId,
+            String sessionId,
+            String sessionToken
+    ) {
+        Long sessionIdLong;
+        try {
+            sessionIdLong = Long.parseLong(sessionId);
+        } catch (NumberFormatException e) {
+            return false;
+        }
+        return sessionRepo.findById(sessionIdLong)
+                .filter(session -> session.getToken().equals(sessionToken))
+                .filter(session -> session.getUserId().equals(userId))
+                .filter(session -> session.getValidUntil().after(new java.util.Date()))
+                .isPresent();
     }
 
 }

@@ -11,6 +11,7 @@ public class PublicUserData {
     private String friendlyName;
     private String email;
     private String picture;
+    private Integer role = 0; // 0 = user, 1 = teacher, 2 = admin
 
     private List<String> classes;
 
@@ -20,6 +21,7 @@ public class PublicUserData {
         this.email = userData.getEmail();
         this.picture = userData.getPicture();
         this.classes = userData.getClasses();
+        this.role = userData.getRole();
     }
 
 }

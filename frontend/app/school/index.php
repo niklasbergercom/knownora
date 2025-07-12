@@ -56,9 +56,9 @@
             <ul id="header-menu-left">
                 <li><a class="underlined-link" href="../">Home<div></div></a></li>
                 <li><a class="underlined-link" href="../chat">Chat<div></div></a></li>
-                <li><a class="underlined-link" href="#">Calendar<div></div></a></li>
+                <li><a class="underlined-link" href="../calendar">Calendar<div></div></a></li>
                 <li><a class="underlined-link" href="../classes">Classes<div></div></a></li>
-                <li><a class="underlined-link underlined-link-focused" href="../school">School<div></div></a></li>
+                <li><a class="underlined-link underlined-link-focused" href="#">School<div></div></a></li>
             </ul>
         </div>
         <div>

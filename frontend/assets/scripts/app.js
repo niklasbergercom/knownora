@@ -1,4 +1,5 @@
 let profileSidebarOpened = false;
+let myInfo = {}
 
 function toggleProfileSidebar(state = undefined) {
     const profileSidebarWrapper = document.getElementById('profile-sidebar-wrapper');
@@ -19,3 +20,54 @@ function toggleProfileSidebar(state = undefined) {
         profileSidebarOpened = false;
     }
 }
+
+function signOut() {
+    fetch("/api/auth/logout", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            userId: getCookie("knownoraUserId"),
+            sessionId: getCookie("knownoraSessionId"),
+            sessionToken: getCookie("knownoraSessionToken")
+        })
+    }).then((response) => {
+        setCookie("knownoraUserId", "", -1);
+        setCookie("knownoraSessionId", "", -1);
+        setCookie("knownoraSessionToken", "", -1);
+        window.location.href = "/app/login?popup=logout-success";
+    }).catch((error) => {
+        setCookie("knownoraUserId", "", -1);
+        setCookie("knownoraSessionId", "", -1);
+        setCookie("knownoraSessionToken", "", -1);
+        window.location.href = "/app/login?popup=logout-success";    });
+}
+
+fetch("/api/account/my-info", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        userId: getCookie("knownoraUserId"),
+        sessionId: getCookie("knownoraSessionId"),
+        sessionToken: getCookie("knownoraSessionToken")
+    })
+}).then((response) => {
+    response.json().then((json) => {
+        if (response.ok) {
+            myInfo = json;
+            if (myInfo.picture === "" || myInfo.picture === null) {
+                myInfo.picture = "/assets/images/account-default.svg";
+            }
+            pageBuild();
+        } else {
+            window.location.href = "/app/login?popup=session-expired"
+        }
+    }).catch((error) => {
+        window.location.href = "/app/login?popup=session-expired"
+    });
+}).catch((error) => {
+    console.error(error)
+})

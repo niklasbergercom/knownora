@@ -68,3 +68,43 @@ function signIn() {
     })
 
 }
+
+
+// Check for URL parameters to display messages
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has("popup")) {
+    const popup = urlParams.get("popup");
+    const popupElement = document.getElementById("login-popup");
+    const popupText = document.getElementById("login-popup-inner");
+
+    if (popup === "session-expired") {
+        popupText.innerHTML = "Your session has expired. Please log in again.";
+    } else if (popup === "logout-success") {
+        popupText.innerHTML = "You have been successfully logged out.";
+    }
+
+    popupElement.style.display = "unset";
+    setTimeout(() => {
+        popupElement.style.transform = "translateY(-200%)";
+    }, 5000);
+}
+
+fetch("/api/account/my-info", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        userId: getCookie("knownoraUserId"),
+        sessionId: getCookie("knownoraSessionId"),
+        sessionToken: getCookie("knownoraSessionToken")
+    })
+}).then((response) => {
+    response.json().then((json) => {
+        if (response.ok) {
+            window.location.href = "/app";
+        }
+    }).catch((error) => {
+        console.error(error);
+    });
+})

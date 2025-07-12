@@ -16,6 +16,43 @@ main {
     flex-wrap: wrap;
 }
 
+#login-popup {
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    display: none;
+    background-color: var(--color-button);
+    border-radius: 25px;
+    padding: 0;
+    overflow: hidden;
+    transition: ease 1s transform;
+}
+
+#login-popup-inner {
+    padding: 25px;
+}
+
+#login-popup-progress {
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+#login-popup-progress > div {
+    height: 3px;
+    width: 100%;
+    animation: roundtime calc(5s) linear forwards;
+    transform-origin: left center;
+    background-color: var(--color-primary);
+}
+
+@keyframes roundtime {
+    to {
+        /* More performant than `width` */
+        transform: scaleX(0);
+    }
+}
+
 #login-general-message {
     margin-top: 25px;
 }
