@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Added create buttons in chat and calendar">
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Updates on login logic: Improved error handling and design">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/SetupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/GenericConfigData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/repo/GenericConfigRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/setup/admin-account/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/setup/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/setup/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/setup/template/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/setup/template/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +163,7 @@
       <workItem from="1751913463321" duration="5003000" />
       <workItem from="1752002503282" duration="198000" />
       <workItem from="1752085997839" duration="3154000" />
-      <workItem from="1752333494743" duration="343000" />
+      <workItem from="1752333494743" duration="8748000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -228,7 +237,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751144490900</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Updates on login logic: Improved error handling and design">
+      <option name="closed" value="true" />
+      <created>1752334102723</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1752334102723</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +271,7 @@
     <MESSAGE value="Started on chat design: just chat list yet, no messages" />
     <MESSAGE value="Profile menu sidebar and placeholders for subpages that aren't designed yet" />
     <MESSAGE value="Added create buttons in chat and calendar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added create buttons in chat and calendar" />
+    <MESSAGE value="Updates on login logic: Improved error handling and design" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updates on login logic: Improved error handling and design" />
   </component>
 </project>

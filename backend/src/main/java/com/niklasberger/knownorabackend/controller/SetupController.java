@@ -1,8 +1,10 @@
 package com.niklasberger.knownorabackend.controller;
 
+import com.niklasberger.knownorabackend.data.GenericConfigData;
 import com.niklasberger.knownorabackend.data.PrivateUserData;
 import com.niklasberger.knownorabackend.data.SessionData;
 import com.niklasberger.knownorabackend.data.UserData;
+import com.niklasberger.knownorabackend.repo.GenericConfigRepo;
 import com.niklasberger.knownorabackend.repo.SessionRepo;
 import com.niklasberger.knownorabackend.repo.UserRepo;
 import jakarta.servlet.http.HttpServletRequest;
@@ -10,25 +12,58 @@ import org.apache.commons.codec.digest.DigestUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import ua_parser.Parser;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 import ua_parser.Client;
+import ua_parser.Parser;
 
 import java.util.List;
 import java.util.Map;
 
 @RestController
-public class AuthController {
+public class SetupController {
+
+    @Autowired
+    private GenericConfigRepo genericConfigRepo;
 
     @Autowired
     private UserRepo userRepo;
+
     @Autowired
     private SessionRepo sessionRepo;
 
-    @PostMapping("/public/auth/signup")
-    public ResponseEntity signup(
-            @RequestBody Map<String, String> requestInput
+    @GetMapping("/private/setup/status")
+    public ResponseEntity getSetupStatus() {
+
+        String setupStatus = genericConfigRepo.findByKey("setupStatus")
+                .map(config -> config.getValue())
+                .orElse("null");
+
+        return new ResponseEntity(
+                setupStatus,
+                HttpStatus.OK
+        );
+
+    }
+
+    @PostMapping("/public/setup/create-admin-account")
+    public ResponseEntity createAdminAccount(
+            @RequestBody Map<String, String> requestInput,
+            HttpServletRequest request
     ){
+
+        // Check if setup is already done
+        String setupStatus = genericConfigRepo.findByKey("setupStatus")
+                .map(config -> config.getValue())
+                .orElse("null");
+        if (!"null".equals(setupStatus)) {
+            return new ResponseEntity<>(
+                    "[\"An admin account was already created.\"]",
+                    HttpStatus.BAD_REQUEST
+            );
+        }
 
         String cleanedEmail = requestInput.getOrDefault("email", "").trim().toLowerCase().replace("'", "");
         String cleanedPassword = requestInput.getOrDefault("password", "").trim().replace("'", "");
@@ -74,52 +109,15 @@ public class AuthController {
                 cleanedFriendlyName,
                 cleanedEmail,
                 hashedPassword,
-                0,
+                1,
                 "",
                 List.of(),
-                0
+                2
         );
 
         // Save the user to the database
         userRepo.save(newUser);
 
-        return new ResponseEntity(new PrivateUserData(newUser), HttpStatus.CREATED);
-
-    }
-
-    @PostMapping("/public/auth/login")
-    public ResponseEntity login(
-            @RequestBody Map<String, String> requestInput,
-            HttpServletRequest request
-    ){
-        String cleanedEmail = requestInput.getOrDefault("email", "").trim().toLowerCase().replace("'", "");
-        String cleanedPassword = requestInput.getOrDefault("password", "").trim().replace("'", "");
-
-        // Check if any field is empty
-        if (cleanedEmail.isEmpty() || cleanedPassword.isEmpty()) {
-            return new ResponseEntity<>(
-                    "[\"Missing required fields\"]",
-                    HttpStatus.BAD_REQUEST
-            );
-        }
-
-        // Hash the password using SHA-256
-        String hashedPassword = DigestUtils.sha512Hex(cleanedPassword + cleanedEmail);
-
-        // Find the user by email and password
-        var userOpt = userRepo.findByEmail(cleanedEmail)
-                .filter(u -> ((UserData) u).getPassword().equals(hashedPassword));
-
-        if (userOpt.isEmpty()) {
-            return new ResponseEntity<>(
-                    "[\"Invalid email or password\"]",
-                    HttpStatus.UNAUTHORIZED
-            );
-        }
-
-        UserData user = (UserData) userOpt.get();
-
-        // User is authenticated now, creating a session w/ browser info
         String userAgent = request.getHeader("User-Agent");
         Parser uaParser = new Parser();
         Client c = uaParser.parse(userAgent);
@@ -137,11 +135,29 @@ public class AuthController {
             ipAddress = request.getRemoteAddr();
         }
 
-        SessionData sessionData = new SessionData(user.getId(), browser, os, ipAddress);
+        SessionData sessionData = new SessionData(newUser.getId(), browser, os, ipAddress);
         sessionRepo.save(sessionData);
+
+        // Update the setupStatus to "account"
+        genericConfigRepo.updateValue("setupStatus", "account");
 
         return new ResponseEntity<>(sessionData, HttpStatus.OK);
 
+    }
+
+    @PostMapping("/public/setup/select-template")
+    public ResponseEntity selectTemplate(
+            @RequestBody Map<String, String> requestInput
+    ) {
+        String templateI = requestInput.getOrDefault("i", "").trim().replace("'", "");
+        String templateFor = requestInput.getOrDefault("for", "").trim().replace("'", "");
+
+        // TODO: implement /select-template
+
+        return new ResponseEntity<>(
+                "[\"Not implemented yet.\"]",
+                HttpStatus.NOT_IMPLEMENTED
+        );
     }
 
 }

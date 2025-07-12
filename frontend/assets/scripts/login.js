@@ -52,18 +52,18 @@ function signIn() {
                 window.location.href = "/app";
             } else {
                 document.getElementById("login-button").disabled = false;
-                document.getElementById("login-button").innerHTML = "Sign In";
+                document.getElementById("login-button").innerHTML = "Continue";
                 document.getElementById("login-general-message").innerHTML = json[0];
             }
         }).catch((error) => {
             document.getElementById("login-button").disabled = false;
-            document.getElementById("login-button").innerHTML = "Sign In";
+            document.getElementById("login-button").innerHTML = "Continue";
             document.getElementById("login-general-message").innerHTML = "An unknown error occurred. This is likely not your fault. Please try again later or contact an administrator if the issue persists.";
         })
 
     }).catch((error) => {
         document.getElementById("login-button").disabled = false;
-        document.getElementById("login-button").innerHTML = "Sign In";
+        document.getElementById("login-button").innerHTML = "Continue";
         document.getElementById("login-general-message").innerHTML = "An unknown error occurred. This is likely not your fault. Please try again later or contact an administrator if the issue persists.";
     })
 

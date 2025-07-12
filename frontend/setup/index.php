@@ -17,11 +17,44 @@
         </div>
         <div id="login-main">
             <h1>Thanks for installing Knownora!</h1>
-            <p>Knownora allows your students (or classmates) to collaborate more efficiently on one unified platform, making it easier for them to work together on projects and assignments.</p>
-            <p>This setup will guide you through configuring your instance and setting up an initial admin account.</p>
-            <div>
-                <button class="simple-button" onclick="window.location.href = 'backup'">Let's get started</button>
-            </div>
+            <?php
+                // Disable error reporting for production
+                error_reporting(0);
+                // Fetch http://backend/private/setup/status
+                try {
+                    $setupStatus = file_get_contents('http://backend:8080/private/setup/status');
+                    if ($setupStatus == 'null') {
+                        echo "
+                                <p>Knownora allows you and your students (or classmates) to collaborate more efficiently on one unified platform, making it easier to work together on projects and assignments.</p>
+                                <p>This setup will guide you through configuring your instance and setting up an initial admin account.</p>
+                                <div>
+                                    <button class=\"simple-button\" onclick=\"window.location.href = 'admin-account'\">Let's get started</button>
+                                </div>
+                        ";
+                    } elseif ($setupStatus == '') {
+                        echo "
+                                <p>There was an error while trying to fetch the setup status. Please make sure the backend container is running and try again.</p>
+                                <div>
+                                    <button class=\"simple-button\" onclick=\"window.location.reload()\">Retry</button>
+                                </div>
+                        ";
+                    } else {
+                        echo "
+                                <p>Knownora is already set up. You can access your instance by clicking the button below.</p>
+                                <div>
+                                    <button class=\"simple-button\" onclick=\"window.location.href = '../app'\">Go to Knownora</button>
+                                </div>
+                        ";
+                    }
+                } catch (Exception $e) {
+                    echo "
+                            <p>There was an error while trying to fetch the setup status. Please make sure the backend container is running and try again.</p>
+                            <div>
+                                <button class=\"simple-button\" onclick=\"window.location.reload()\">Retry</button>
+                            </div>
+                    ";
+                }
+            ?>
         </div>
     </main>
 </body>
