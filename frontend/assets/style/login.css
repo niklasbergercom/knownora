@@ -16,6 +16,10 @@ main {
     flex-wrap: wrap;
 }
 
+#login-general-message {
+    margin-top: 25px;
+}
+
 #login-logo {
     display: flex;
     justify-content: center;

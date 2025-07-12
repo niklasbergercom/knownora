@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Added create buttons in chat and calendar">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PrivateUserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PublicUserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/general.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/knownora.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/knownora.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/SessionData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/SessionData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/style/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,6 +154,7 @@
       <workItem from="1751913463321" duration="5003000" />
       <workItem from="1752002503282" duration="198000" />
       <workItem from="1752085997839" duration="3154000" />
+      <workItem from="1752333494743" duration="343000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />

@@ -131,8 +131,6 @@ public class AuthController {
             os = "Generic OS";
         }
 
-        System.out.println(c.device.family);
-
         String ipAddress = request.getHeader("X-Forwarded-For");
         if (ipAddress == null || ipAddress.isEmpty()) {
             ipAddress = request.getRemoteAddr();
