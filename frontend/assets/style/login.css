@@ -104,3 +104,18 @@ main {
 #login-main > a:first-of-type {
     margin-bottom: 10px;
 }
+
+label[for="login-grade"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login-grade {
+    font-size: medium;
+    padding: 10px;
+    border: 1px solid var(--color-primary);
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 15px;
+}

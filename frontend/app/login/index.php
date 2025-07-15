@@ -11,9 +11,7 @@
 </head>
 <body>
     <div id="login-popup">
-        <div id="login-popup-inner">
-            Lorem Ipsum Dolor Sit Amet
-        </div>
+        <div id="login-popup-inner"></div>
         <div id="login-popup-progress">
             <div></div>
         </div>

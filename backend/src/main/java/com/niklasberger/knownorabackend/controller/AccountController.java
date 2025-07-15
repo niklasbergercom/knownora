@@ -1,12 +1,11 @@
 package com.niklasberger.knownorabackend.controller;
 
 import com.niklasberger.knownorabackend.CommonsService;
-import com.niklasberger.knownorabackend.controller.AuthController;
 import com.niklasberger.knownorabackend.data.PrivateUserData;
 import com.niklasberger.knownorabackend.data.SessionData;
-import com.niklasberger.knownorabackend.repo.SessionRepo;
 import com.niklasberger.knownorabackend.repo.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.util.Pair;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,13 +29,20 @@ public class AccountController {
             @RequestBody Map<String, String> requestInput
     ) {
 
-        String userId = requestInput.getOrDefault("userId", "").trim().replace("'", "");
-        String sessionId = requestInput.getOrDefault("sessionId", "").trim().replace("'", "");
-        String sessionToken = requestInput.getOrDefault("sessionToken", "").trim().replace("'", "");
+        String userId = requestInput.getOrDefault("userId", "X").trim().replace("'", "");
+        String sessionId = requestInput.getOrDefault("sessionId", "X").trim().replace("'", "");
+        String sessionToken = requestInput.getOrDefault("sessionToken", "X").trim().replace("'", "");
 
-        Optional<SessionData> requestSession = commonsService.validateSession(sessionId, sessionToken, userId);
+        Pair<Optional<SessionData>, String> requestSession = commonsService.validateSession(sessionId, sessionToken, userId);
 
-        if (requestSession.isEmpty()) {
+        if (requestSession.getSecond().equals("expired")) {
+            return new ResponseEntity(
+                    "[\"Session expired\"]",
+                    HttpStatus.UNAUTHORIZED
+            );
+        }
+
+        if (requestSession.getFirst().isEmpty()) {
             return new ResponseEntity(
                     "[\"Invalid sessionId, sessionToken or userId\"]",
                     HttpStatus.UNAUTHORIZED

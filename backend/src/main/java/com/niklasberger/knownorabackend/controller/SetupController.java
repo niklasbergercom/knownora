@@ -112,7 +112,8 @@ public class SetupController {
                 1,
                 "",
                 List.of(),
-                2
+                2,
+                "0"
         );
 
         // Save the user to the database

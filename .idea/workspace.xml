@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="First setup logic">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/CommonsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AccountController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/images/account-default.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-home.js" afterDir="false" />
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function">
+      <change afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/signup.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/CommonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/CommonsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/SetupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/SetupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/GenericConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/GenericConfigData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PrivateUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PrivateUserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PublicUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PublicUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/classes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/classes/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/school/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/school/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,29 +67,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "v1.0.0",
-    "last_opened_file_path": "/home/niklasberger/Documents/Source/Clone/knownora/frontend/assets/images",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;v1.0.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/niklasberger/Documents/Source/Clone/knownora/frontend/assets/images&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "PHP"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PHP&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/frontend/assets/images" />
@@ -166,7 +166,9 @@
       <workItem from="1751913463321" duration="5003000" />
       <workItem from="1752002503282" duration="198000" />
       <workItem from="1752085997839" duration="3154000" />
-      <workItem from="1752333494743" duration="15482000" />
+      <workItem from="1752333494743" duration="20634000" />
+      <workItem from="1752439725182" duration="2674000" />
+      <workItem from="1752611268406" duration="642000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -256,7 +258,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752347455875</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function">
+      <option name="closed" value="true" />
+      <created>1752355526087</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752355526087</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +294,7 @@
     <MESSAGE value="Added create buttons in chat and calendar" />
     <MESSAGE value="Updates on login logic: Improved error handling and design" />
     <MESSAGE value="First setup logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="First setup logic" />
+    <MESSAGE value="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function" />
   </component>
 </project>

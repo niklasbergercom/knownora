@@ -62,11 +62,13 @@ fetch("/api/account/my-info", {
                 myInfo.picture = "/assets/images/account-default.svg";
             }
             pageBuild();
+        } else if (json[0] === "Session expired") {
+            window.location.href = "/app/login?popup=session-expired";
         } else {
-            window.location.href = "/app/login?popup=session-expired"
+            window.location.href = "/app/login"
         }
     }).catch((error) => {
-        window.location.href = "/app/login?popup=session-expired"
+        window.location.href = "/app/login"
     });
 }).catch((error) => {
     console.error(error)

@@ -12,6 +12,7 @@ public class PublicUserData {
     private String email;
     private String picture;
     private Integer role = 0; // 0 = user, 1 = teacher, 2 = admin
+    private String grade;
 
     private List<String> classes;
 
@@ -22,6 +23,7 @@ public class PublicUserData {
         this.picture = userData.getPicture();
         this.classes = userData.getClasses();
         this.role = userData.getRole();
+        this.grade = userData.getGrade();
     }
 
 }
