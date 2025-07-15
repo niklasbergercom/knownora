@@ -22,7 +22,7 @@
             <span>Knownora</span>
         </div>
         <div id="login-main">
-            <h1>Sign in to Example School</h1>
+            <h1>Create an Account</h1>
             <form>
                 <label for="login-name">Full Name * <span id="login-name-message" class="form-error"></span></label><br>
                 <input type="text" id="login-name" placeholder="Alan Smithee" required><br>
@@ -41,10 +41,7 @@
                 <div class="form-error" id="login-general-message"></div>
             </form>
             <div>
-                <a href="./forgot-password" class="underlined-link">I forgot my password<div></div></a>
-            </div>
-            <div>
-                <a href="./create-account" class="underlined-link">Create an account<div></div></a>
+                <a href="../" class="underlined-link">Sign in instead<div></div></a>
             </div>
         </div>
     </main>

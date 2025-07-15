@@ -2,7 +2,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 main {
@@ -10,7 +10,6 @@ main {
     padding: 50px;
     border-radius: 25px;
     width: 500px;
-    height: 700px;
     display: flex;
     align-content: space-between;
     flex-wrap: wrap;
@@ -118,4 +117,16 @@ label[for="login-grade"] {
     cursor: pointer;
     background-color: rgba(255, 255, 255, 0);
     margin-bottom: 15px;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: var(--color-background-secondary);
+    }
+
+    main {
+        border-radius: 0;
+    }
+
 }

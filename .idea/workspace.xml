@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function">
-      <change afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/signup.js" afterDir="false" />
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Backend reports if session is expired">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/CommonsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/CommonsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AccountController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/SetupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/SetupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/GenericConfigData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/GenericConfigData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PrivateUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PrivateUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PublicUserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/PublicUserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/UserData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/login/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
     </list>
@@ -168,7 +157,7 @@
       <workItem from="1752085997839" duration="3154000" />
       <workItem from="1752333494743" duration="20634000" />
       <workItem from="1752439725182" duration="2674000" />
-      <workItem from="1752611268406" duration="642000" />
+      <workItem from="1752611268406" duration="2102000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -266,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752355526087</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Backend reports if session is expired">
+      <option name="closed" value="true" />
+      <created>1752612799468</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1752612799468</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +292,7 @@
     <MESSAGE value="Updates on login logic: Improved error handling and design" />
     <MESSAGE value="First setup logic" />
     <MESSAGE value="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function" />
+    <MESSAGE value="Backend reports if session is expired" />
+    <option name="LAST_COMMIT_MESSAGE" value="Backend reports if session is expired" />
   </component>
 </project>

@@ -41,7 +41,7 @@ function signOut() {
         setCookie("knownoraUserId", "", -1);
         setCookie("knownoraSessionId", "", -1);
         setCookie("knownoraSessionToken", "", -1);
-        window.location.href = "/app/login?popup=logout-success";    });
+        window.location.href = "/app/login?popup=logout-success";});
 }
 
 fetch("/api/account/my-info", {
