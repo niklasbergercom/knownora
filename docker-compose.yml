@@ -11,6 +11,7 @@ services:
       - SPRING_DATASOURCE_USERNAME=root
       - SPRING_DATASOURCE_PASSWORD=example
     ports:
+#     TODO: Change to "8080" when ready for production
       - "8080:8080"
     depends_on:
       - db
@@ -34,6 +35,7 @@ services:
       - MARIADB_ROOT_PASSWORD=example
       - MARIADB_DATABASE=mydatabase
     ports:
+#     TODO: Change to "3306" when ready for production
       - "3306:3306"
     volumes:
       - db_data:/var/lib/mysql

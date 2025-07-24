@@ -44,6 +44,33 @@ function signOut() {
         window.location.href = "/app/login?popup=logout-success";});
 }
 
+function defaultPageBuild() {
+    document.getElementById("sidebar-name").innerHTML = myInfo.friendlyName;
+    document.getElementById("sidebar-email").innerHTML = myInfo.email;
+    document.getElementById("sidebar-picture").src = myInfo.picture;
+    document.getElementById("sidebar-open-image").src = myInfo.picture;
+
+    const pathLinkRelations = {
+        "/app/": "header-link-app",
+        "/app/chat/": "header-link-chat",
+        "/app/calendar/": "header-link-calendar",
+        "/app/classes/": "header-link-classes",
+        "/app/school/": "header-link-school"
+    }
+
+    const currentPath = window.location.pathname;
+
+    try {
+        let linkId = pathLinkRelations[currentPath];
+        console.log("CHECKPOINT 1: " + linkId);
+        if (linkId === null) { linkId = pathLinkRelations[currentPath + "/"]; }
+        console.log("CHECKPOINT 2: " + linkId);
+        document.getElementById(linkId).classList.add("underlined-link-focused");
+    } catch (error) {
+        console.error("Error setting active link:", error);
+    }
+}
+
 fetch("/api/account/my-info", {
     method: "POST",
     headers: {
@@ -61,15 +88,20 @@ fetch("/api/account/my-info", {
             if (myInfo.picture === "" || myInfo.picture === null) {
                 myInfo.picture = "/assets/images/account-default.svg";
             }
-            pageBuild();
+            try {
+                defaultPageBuild();
+                pageBuild();
+            } catch (error) {
+                console.error("Error building page:", error);
+            }
         } else if (json[0] === "Session expired") {
             window.location.href = "/app/login?popup=session-expired";
         } else {
-            window.location.href = "/app/login"
+            window.location.href = "/app/login";
         }
     }).catch((error) => {
-        window.location.href = "/app/login"
+        window.location.href = "/app/login";
     });
 }).catch((error) => {
-    console.error(error)
+    console.error(error);
 })

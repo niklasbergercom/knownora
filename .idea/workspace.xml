@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Backend reports if session is expired">
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Mobile optimisations for all login pages (pages using login.css design)">
+      <change afterPath="$PROJECT_DIR$/frontend/assets/components/app-header.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/components/sidebar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-calendar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-chat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-classes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-school.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-settings.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/login/create-account/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/calendar/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/calendar/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/classes/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/classes/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/profile/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/profile/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/school/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/school/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/settings/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/settings/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app-home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/style/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/general.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +174,8 @@
       <workItem from="1752085997839" duration="3154000" />
       <workItem from="1752333494743" duration="20634000" />
       <workItem from="1752439725182" duration="2674000" />
-      <workItem from="1752611268406" duration="2102000" />
+      <workItem from="1752611268406" duration="2908000" />
+      <workItem from="1753360311691" duration="2650000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -263,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752612799468</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Mobile optimisations for all login pages (pages using login.css design)">
+      <option name="closed" value="true" />
+      <created>1752614404324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1752614404324</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +319,7 @@
     <MESSAGE value="First setup logic" />
     <MESSAGE value="Authentication more robust: Client gets user info, automatic redirecting when signed in/out, log out function" />
     <MESSAGE value="Backend reports if session is expired" />
-    <option name="LAST_COMMIT_MESSAGE" value="Backend reports if session is expired" />
+    <MESSAGE value="Mobile optimisations for all login pages (pages using login.css design)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mobile optimisations for all login pages (pages using login.css design)" />
   </component>
 </project>
