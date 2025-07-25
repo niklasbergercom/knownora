@@ -15,12 +15,12 @@
                     </button>
                 </div>
             </div>
-            <a class="underlined-link profile-sidebar-link" href="profile">
+            <a class="underlined-link profile-sidebar-link" href="/app/profile">
                 <img src="/assets/icons/user-solid-0c0501.svg" alt="My Profile">
                 My Profile
                 <div></div>
             </a>
-            <a class="underlined-link profile-sidebar-link" href="settings">
+            <a class="underlined-link profile-sidebar-link" href="/app/settings">
                 <img src="/assets/icons/gear-solid-0c0501.svg" alt="Settings">
                 Settings
                 <div></div>
