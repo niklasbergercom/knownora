@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Header + Sidebar are now components that get loaded with &lt;?php include ?&gt;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/components/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/components/sidebar.php" afterDir="false" />
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Quick fix for links in sidebar">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/WebsocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/ChatData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/ChatMessageData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/listener/ChatListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/repo/ChatRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +163,7 @@
       <workItem from="1752439725182" duration="2674000" />
       <workItem from="1752611268406" duration="2908000" />
       <workItem from="1753360311691" duration="2828000" />
-      <workItem from="1753441157465" duration="170000" />
+      <workItem from="1753441157465" duration="1469000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -279,7 +285,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753363122791</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Quick fix for links in sidebar">
+      <option name="closed" value="true" />
+      <created>1753441498278</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1753441498278</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +325,7 @@
     <MESSAGE value="Backend reports if session is expired" />
     <MESSAGE value="Mobile optimisations for all login pages (pages using login.css design)" />
     <MESSAGE value="Header + Sidebar are now components that get loaded with &lt;?php include ?&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header + Sidebar are now components that get loaded with &lt;?php include ?&gt;" />
+    <MESSAGE value="Quick fix for links in sidebar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick fix for links in sidebar" />
   </component>
 </project>
