@@ -21,4 +21,24 @@ public class ChatMessageData {
     private String content;
     private Timestamp timestamp;
 
+    public ChatMessageData(Long chatId, String senderId, String type, String content, Timestamp timestamp) {
+        this.chatId = chatId;
+        this.senderId = senderId;
+        this.type = type;
+        this.content = content;
+        this.timestamp = timestamp;
+    };
+
+    public ChatMessageData(Long chatId, String senderId, String type, String content) {
+        this.chatId = chatId;
+        this.senderId = senderId;
+        this.type = type;
+        this.content = content;
+        this.timestamp = new Timestamp(System.currentTimeMillis());
+    };
+
+    public ChatMessageData() {
+
+    };
+
 }

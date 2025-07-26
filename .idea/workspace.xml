@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Quick fix for links in sidebar">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/WebsocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/controller/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/ChatData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/data/ChatMessageData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/listener/ChatListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/niklasberger/knownorabackend/repo/ChatRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +156,7 @@
       <workItem from="1752439725182" duration="2674000" />
       <workItem from="1752611268406" duration="2908000" />
       <workItem from="1753360311691" duration="2828000" />
-      <workItem from="1753441157465" duration="1469000" />
+      <workItem from="1753441157465" duration="2126000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
