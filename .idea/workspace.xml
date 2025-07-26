@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Quick fix for links in sidebar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/app/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/chat/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app-chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-chat.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/style/app-chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app-chat.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,8 +123,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.26927.60" />
-        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.26927.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PS-251.27812.52" />
+        <option value="bundled-php-predefined-a98d8de5180a-e5747d4f5a45-com.jetbrains.php.sharedIndexes-PS-251.27812.52" />
       </set>
     </attachedChunks>
   </component>
@@ -157,6 +162,7 @@
       <workItem from="1752611268406" duration="2908000" />
       <workItem from="1753360311691" duration="2828000" />
       <workItem from="1753441157465" duration="2126000" />
+      <workItem from="1753560756734" duration="3473000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />

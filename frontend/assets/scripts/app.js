@@ -62,9 +62,7 @@ function defaultPageBuild() {
 
     try {
         let linkId = pathLinkRelations[currentPath];
-        console.log("CHECKPOINT 1: " + linkId);
         if (linkId === null) { linkId = pathLinkRelations[currentPath + "/"]; }
-        console.log("CHECKPOINT 2: " + linkId);
         document.getElementById(linkId).classList.add("underlined-link-focused");
     } catch (error) {
         console.error("Error setting active link:", error);

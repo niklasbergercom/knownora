@@ -15,86 +15,8 @@
     <?php include '../../assets/components/app-header.php' ?>
     <main>
         <div id="chat-sidebar">
-            <div id="chat-focused">
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/male02.jpg" alt="John Appleseed" title="John Appleseed">
-                </div>
-                <div>
-                    <b>John Appleseed</b><br>
-                    <span><span>You:</span>&nbsp;Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/male03.jpg" alt="Joe Public" title="Joe Public">
-                </div>
-                <div>
-                    <b>Joe Public</b><br>
-                    <span>Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/female01.jpg" alt="Samantha Sample" title="Samantha Sample">
-                </div>
-                <div>
-                    <b>Samantha Sample</b><br>
-                    <span><span>You:</span>&nbsp;Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/female02.jpg" alt="Alan Smithee" title="Alan Smithee">
-                </div>
-                <div>
-                    <b>Alan Smithee</b><br>
-                    <span>Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/male02.jpg" alt="John Appleseed" title="John Appleseed">
-                </div>
-                <div>
-                    <b>John Appleseed</b><br>
-                    <span><span>You:</span>&nbsp;Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/male03.jpg" alt="Joe Public" title="Joe Public">
-                </div>
-                <div>
-                    <b>Joe Public</b><br>
-                    <span>Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/female01.jpg" alt="Samantha Sample" title="Samantha Sample">
-                </div>
-                <div>
-                    <b>Samantha Sample</b><br>
-                    <span><span>You:</span>&nbsp;Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/female02.jpg" alt="Alan Smithee" title="Alan Smithee">
-                </div>
-                <div>
-                    <b>Alan Smithee</b><br>
-                    <span>Lorem Ipsum Dolor Sit Amet</span>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="https://cdn.niklasberger.com/knownora/example-pictures/male02.jpg" alt="John Appleseed" title="John Appleseed">
-                </div>
-                <div>
-                    <b>John Appleseed</b><br>
-                    <span><span>You:</span>&nbsp;Lorem Ipsum Dolor Sit Amet</span>
-                </div>
+            <div id="chat-sidebar-list">
+                <p>Loading...</p>
             </div>
             <div id="chat-create-wrapper">
                 <button class="simple-button" id="chat-create-button" title="Create Chat" onclick="startNewChat()">

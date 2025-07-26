@@ -14,7 +14,11 @@ main {
     overflow-x: hidden;
 }
 
-#chat-sidebar > div:not(#chat-create-wrapper) {
+#chat-sidebar-list > p {
+    margin-left: 15px;
+}
+
+#chat-sidebar-list > div {
     padding: 15px 25px;
     cursor: pointer;
     transition: 0.2s ease background-color;
@@ -22,15 +26,15 @@ main {
     align-items: center;
 }
 
-#chat-sidebar > div:not(#chat-create-wrapper):hover {
+#chat-sidebar-list > div:hover {
     background-color: var(--color-focused);
 }
 
-#chat-sidebar > div:nth-last-of-type(2) {
+#chat-sidebar-list > div:last-of-type {
     margin-bottom: 100px;
 }
 
-#chat-sidebar > div:not(#chat-create-wrapper) > div:first-of-type > img {
+#chat-sidebar-list > div > div:first-of-type > img {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -38,7 +42,7 @@ main {
     margin-right: 15px;
 }
 
-#chat-sidebar > div:not(#chat-create-wrapper) > div:last-of-type > * {
+#chat-sidebar-list > div > div:last-of-type > * {
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
