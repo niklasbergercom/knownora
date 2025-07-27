@@ -54,6 +54,33 @@ function pageBuild() {
 
 }
 
+function createChatSearchUsers() {
+    const searchInput = document.getElementById("search-input").value.trim();
+    const searchResults = document.getElementById("search-results");
+
+    if (searchInput === "") {
+        return;
+    }
+
+    fetch("/api/account/search-users", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            userId: getCookie("knownoraUserId"),
+            sessionId: getCookie("knownoraSessionId"),
+            sessionToken: getCookie("knownoraSessionToken"),
+            query: searchInput,
+            limit: 10
+        })
+    }).then((response) => {
+        // TODO: Implement API endpoint & response handling
+    }).catch((error) => {
+        searchResults.innerHTML = '<p>Error fetching users. Please try again later.</p>';
+        console.error(error);
+    });
+}
 
 // function openChat(chatId) {
 //

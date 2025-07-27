@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Quick fix for links in sidebar">
+    <list default="true" id="a9c252d4-6663-401a-81b3-0588b899a928" name="Changes" comment="Frontend displays chat list">
+      <change afterPath="$PROJECT_DIR$/frontend/assets/components/popups/create-chat.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/backend/target/knownora-backend-1.0.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/app/chat/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/app/chat/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app-chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app-chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/scripts/general.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/scripts/general.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/assets/style/app-chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/app-chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/assets/style/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/assets/style/general.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,8 @@
       <workItem from="1752611268406" duration="2908000" />
       <workItem from="1753360311691" duration="2828000" />
       <workItem from="1753441157465" duration="2126000" />
-      <workItem from="1753560756734" duration="3473000" />
+      <workItem from="1753560756734" duration="3526000" />
+      <workItem from="1753641376545" duration="4309000" />
     </task>
     <task id="LOCAL-00001" summary="Added Docker config">
       <option name="closed" value="true" />
@@ -292,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753441498278</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Frontend displays chat list">
+      <option name="closed" value="true" />
+      <created>1753564387793</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1753564387793</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,6 +335,7 @@
     <MESSAGE value="Mobile optimisations for all login pages (pages using login.css design)" />
     <MESSAGE value="Header + Sidebar are now components that get loaded with &lt;?php include ?&gt;" />
     <MESSAGE value="Quick fix for links in sidebar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick fix for links in sidebar" />
+    <MESSAGE value="Frontend displays chat list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend displays chat list" />
   </component>
 </project>

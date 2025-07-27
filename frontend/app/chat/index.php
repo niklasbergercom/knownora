@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../assets/style/app-chat.css">
 </head>
 <body>
+    <div id="popup-wrapper"></div>
     <?php include '../../assets/components/sidebar.php' ?>
     <?php include '../../assets/components/app-header.php' ?>
     <main>
@@ -19,7 +20,7 @@
                 <p>Loading...</p>
             </div>
             <div id="chat-create-wrapper">
-                <button class="simple-button" id="chat-create-button" title="Create Chat" onclick="startNewChat()">
+                <button class="simple-button" id="chat-create-button" title="Create Chat" onclick="togglePopup('create-chat')">
                     <img src="../../assets/icons/plus-solid-0c0501.svg" alt="Create Chat">Create Chat
                 </button>
             </div>
